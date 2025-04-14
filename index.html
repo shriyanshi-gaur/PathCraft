@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pathfinding Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Pathfinding Visualizer</h1>
+
+  <div class="controls">
+    <select id="algorithm-select">
+      <option value="astar">A*</option>
+      <option value="dijkstra">Dijkstra</option>
+      <option value="bfs">Breadth-First Search</option>
+      <option value="dfs">Depth-First Search</option>
+    </select>
+  
+    <label for="speedRange">Speed:</label>
+    <input type="range" id="speedRange" min="1" max="100" value="50" />
+    <span id="speedValue">50</span> ms
+  
+    <button onclick="startPathfinding()">Start</button>
+    <button onclick="resetGrid()">Reset</button>
+  </div>
+  <label>
+    <input type="checkbox" id="weightMode" />
+    Place Weighted Cells
+  </label>
+  
+  <div id="stats">
+    <strong>Visited:</strong> <span id="visitedCount">0</span> |
+    <strong>Path Cost:</strong> <span id="pathCost">0</span>
+  </div>
+  
+  
+
+  <div id="grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

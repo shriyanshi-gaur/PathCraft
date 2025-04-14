@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background-color: #f9fafb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  
+  .controls {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .controls select,
+  .controls button,
+  .controls input[type="range"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .controls button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #45a049;
+  }
+  
+  #grid {
+    display: grid;
+    margin: 20px auto;
+    width: 600px;
+    height: 600px;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    border: 2px solid #333;
+  }
+  
+  .cell {
+    border: 1px solid #e0e0e0;
+    background-color: white;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cell.start {
+    background-color: #2ecc71;
+  }
+  
+  .cell.end {
+    background-color: #e74c3c;
+  }
+  
+  .cell.wall {
+    background-color: #2c3e50;
+  }
+  
+  .cell.visited {
+    background-color: #f1c40f;
+  }
+  
+  .cell.path {
+    background-color: #3498db;
+  }
+  #stats {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  
+  .cell.weight {
+    background-color: orange;
+  }
+  
