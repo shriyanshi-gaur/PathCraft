@@ -12,12 +12,12 @@ An interactive visualizer for classic pathfinding algorithms like A*, Dijkstra, 
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository
+ 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/PathCraft.git
 cd PathCraft
 
-### 2. Open in browser
+ 2. Open in browser
 You can simply open index.html in any modern browser:
   open index.html  # macOS
   start index.html # Windows
