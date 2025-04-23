@@ -96,6 +96,3 @@ MIT
 
 **Happy pathfinding! 🚀**
 
----
-
-Let me know if you want it turned into a Markdown file (`README.md`) or converted to PDF!
